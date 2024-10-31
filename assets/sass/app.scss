@@ -1,0 +1,22 @@
+.pi_image-placeholder {
+	display: inline-block;
+	background-color: #efefef;
+	border: 1px solid #efefef;
+	border-radius: 3px;
+	max-width: 100%;
+
+	&.pi_is-loaded {
+		background-color: transparent;
+		border: none;
+		transition: background-color 750ms;
+	}
+
+	img {
+		transition: opacity 1500ms;
+	}
+
+	img[data-src] {
+		height: 0;
+		opacity: 0;
+	}
+}
